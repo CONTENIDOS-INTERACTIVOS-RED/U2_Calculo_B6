@@ -17,19 +17,97 @@
 
 .bg-color
   &-1
-    background-color: #EAF8FD
+    background-color: #E6F0CD
   &-2
-    background-color: #FFFBE8
+    background-color: #D6F5FB
   &-3
-    background-color: #F0E9F6
+    background-color: #FFEBD0
   &-4
-    background-color: #EAF8FD
+    background-color: #CEE29D
+  &-5
+    color: #496406 !important
+  &-6
+    background-color: #E2DACC !important
+  &-7
+    color: #453179 !important
+  &-8
+    background-color: #F6F3EF !important
+  &-9
+    background-color: #C6BCAA
   &-info
-    background-color: #E8EEFD
+    background-color: #E8EEFD 
   &-sintesis
     background-color: #F9F9F9
   &-white
     background-color: #fff
+.pst
+  display: inline-block
+.bg_img
+  position: relative
+  p, figure, slyder-f, .tarjeta, .linea-tiempo-d, .row, h5
+    position: relative
+  &::before
+    content: ''
+    position: absolute
+    margin: 0
+    top: 0
+    left: -48px
+    width: calc(100% + 96px)
+    height: 80%
+    background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(246, 243, 239, 1) 100%)
+  &_1
+    position: relative
+    p, figure, slyder-f, .tarjeta, .linea-tiempo-d, .row, h5, h2
+      position: relative
+    &::before
+      content: ''
+      position: absolute
+      margin: 0
+      top: 28%
+      left: -48px
+      width: calc(100% + 96px)
+      height: 48%
+      background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(193, 240, 250, 1) 100%)
+  &_2
+    position: relative
+    p, figure, slyder-f, .tarjeta, .linea-tiempo-d, .row, h5, h2
+      position: relative
+    &::before
+      content: ''
+      position: absolute
+      margin: 0
+      top: 39%
+      left: -48px
+      width: calc(100% + 96px)
+      height: 48%
+      background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(242, 247, 229, 1) 100%)
+  &_3
+    position: relative
+    p, figure, slyder-f, .tarjeta, .linea-tiempo-d, .row, h5, h2
+      position: relative
+    &::before
+      content: ''
+      position: absolute
+      margin: 0
+      top: 5%
+      left: -48px
+      width: calc(100% + 96px)
+      height: 62%
+      background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(242, 247, 229, 1) 100%)
+
+.linea-punteada 
+  width: 200px; /* largo de la línea */
+  border-top: 2px dotted black; /* línea punteada */
+  transform: rotate(-13deg); /* inclinación */
+  transform-origin: left; /* punto de giro */
+  margin: 50px;
+.linea-solida 
+  width: 200px; /* largo de la línea */
+  border-top: 2px solid black; /* línea punteada */
+  transform: rotate(-13deg); /* inclinación */
+  transform-origin: left; /* punto de giro */
+  margin: 50px;
+ 
 
 .border-top
   &.color-primario
@@ -51,13 +129,13 @@
 
 .bg-fondo
   &-1
-    background-image: url("../assets/bg/bg1.png") !important
+    background-image: url("../assets/bg/bg1.svg") !important
     background-position: top
   &-2
     // background-image: url("../assets/bg/bg2.png") !important
     background-position: bottom
   &-slider
-    background-image: url("../assets/bg/bg-slider.png") !important
+    background-image: url("../assets/bg/bg-slider.svg") !important
     background-position: bottom
 
 // Variables
@@ -97,15 +175,15 @@ $custom-card-img-height: 322px
 
 
 .acordion__header
-  background-color: lighten($color-acento-contenido, 25%) !important
+  background-color: lighten($color-secundario, 35%) !important
 
 .acordion__header--active
-  background-color: $color-acento-contenido !important
+  background-color: $color-secundario !important
   h4, i
     color: #000 !important
 
 .acordion__contenido
-  background-color: lighten($color-acento-contenido, 27%) !important
+  background-color: lighten($color-secundario, 37%) !important
 
 
 .anexo__texto
