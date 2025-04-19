@@ -34,6 +34,8 @@
     background-color: #F6F3EF !important
   &-9
     background-color: #C6BCAA
+  &-10
+    background-color: #F2F7E5
   &-info
     background-color: #E8EEFD 
   &-sintesis
@@ -70,7 +72,7 @@
       background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(193, 240, 250, 1) 100%)
   &_2
     position: relative
-    p, figure, slyder-f, .tarjeta, .linea-tiempo-d, .row, h5, h2
+    p, figure, slyder-f, .tarjeta, .linea-tiempo-d, .row, h5, h2, .bg-fondo-slider
       position: relative
     &::before
       content: ''
@@ -94,6 +96,19 @@
       width: calc(100% + 96px)
       height: 62%
       background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(242, 247, 229, 1) 100%)
+  &_4
+    position: relative
+    p, figure, slyder-f, .tarjeta, .linea-tiempo-d, .row, h5, h2
+      position: relative
+    &::before
+      content: ''
+      position: absolute
+      margin: 0
+      top: 45%
+      left: -48px
+      width: calc(100% + 96px)
+      height: 42%
+      background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(246, 243, 239, 1) 100%)
 
 .linea-punteada 
   width: 200px; /* largo de la línea */

@@ -44,7 +44,7 @@
       .px-4.px-md-5.py-4
         .titulo-figura.mb-4
           h5 Figura 1.
-          span Gráfico de la función
+          span Gráfico de la función f(x) = (x<sup>2</sup>-1/(x-1))
         .row.justify-content-center.align-items-center.mb-5.bg-color-8
           .col-lg-6.p-4
             figure
@@ -352,7 +352,7 @@
 
           P.mb-0 Así, los límites laterales capturan las distintas tendencias del precio cerca de 1000 unidades.
     
-    .bg-full-width.bg-color-6.mb-lg-5
+    .bg-full-width.bg-color-6.mb-5
       .px-4.p-md-5
         .row.justify-content-center.align-items-center
           .col-lg-7.mb-3.mb-lg-0
